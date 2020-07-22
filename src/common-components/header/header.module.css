@@ -1,0 +1,16 @@
+.primary {
+    color: #7FAAE4;
+    display: block;
+}
+
+.secondary {
+    color: #834DB7;
+}
+
+.main {
+    margin-left: 2em;
+    margin-top: 1em;
+    width: 80%;
+    font-size: 4vh;
+    font-weight: bold;
+}
