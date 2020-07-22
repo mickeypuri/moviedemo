@@ -10,7 +10,11 @@
 .main {
     margin-left: 2em;
     margin-top: 1em;
+    padding: 0.5em;
     width: 80%;
     font-size: 4vh;
     font-weight: bold;
+    border-radius: 0.25em;
+    background-color: white;
+    box-shadow: 5px 5px 10px #b3b3b3;
 }
