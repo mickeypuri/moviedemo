@@ -1,0 +1,6 @@
+{
+    "OmdbUrl": "http://www.omdbapi.com/",
+    "ApiKey": "d2749024",
+    "TitleSearch": "t",
+    "ImdbIdSearch": "i"
+}

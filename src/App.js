@@ -24,8 +24,6 @@ function App() {
         <MovieCard {...tempProp} />
         <MovieCard {...tempProp} />
       </div>
-
-      <Counter />
     </>
   );
 }
