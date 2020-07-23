@@ -1,8 +1,8 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import Header from './common-components/header/header.component';
-import  SearchIcon  from './features/movie-search/search-icon/search-icon.component';
 import MovieCard from './features/movie-search/movie-card/card.component';
+import SearchBox from './features/movie-search/search-box/search-box.component';
 
 import './App.css';
 
@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <Header />
+      <SearchBox  />
       <div className="main-layout">
         <MovieCard {...tempProp} />
         <MovieCard {...tempProp} />
@@ -24,7 +25,6 @@ function App() {
         <MovieCard {...tempProp} />
       </div>
 
-      <SearchIcon />
       <Counter />
     </>
   );

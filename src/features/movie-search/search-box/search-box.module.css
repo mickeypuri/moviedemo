@@ -1,0 +1,25 @@
+.container {
+    background-color: white;
+    width: 50vw;
+    height: 5em;
+    border-radius: 0.5em;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px #b3b3b3;
+}
+
+.input {
+    width: 80%;
+    border: none;
+    margin-left: 0.5em;
+    font-size: 18px;
+    font-color: #34283F;
+}
+
+.input:focus {
+    outline: none;
+}

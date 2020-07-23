@@ -4,7 +4,7 @@ import styles from './search-icon.module.css';
 
 function SearchIcon () {
     return (
-      <Icon className={styles.icon} style={{ fontSize: 40 }} />
+      <Icon className={styles.icon} style={{ fontSize: 50 }} />
     );
 }
 
