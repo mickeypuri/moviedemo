@@ -11,7 +11,7 @@
 
 .info {
     width: 60%;
-    
+    overflow:hidden;
 }
 
 .subtitle {
@@ -20,4 +20,5 @@
 
 .callout {
  color: #834DB7;
+ overflow-y: scroll;
 }

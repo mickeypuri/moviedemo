@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .noResult {
+      color: red;
+      padding: 0.5em;
+  }
+
+  .noResultContainer {
+      border-radius: 0.5em;
+      padding: 1em;
+      background-color: white;
+      box-shadow: 4px 4px 8px #b3b3b3;
+      width: 50vw;
+      margin: auto;
+      margin-top: 3em;
+      text-align: center;
+  }
