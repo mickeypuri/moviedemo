@@ -21,7 +21,7 @@ SearchBox.propTypes = {
 }
 
 SearchBox.defaultProps = {
-    defaultText: "Enter Search Term"
+    defaultText: "Enter title or an IMDB Id starting with tt"
 }
 
 export default SearchBox;

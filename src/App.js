@@ -1,5 +1,4 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
 import Header from './common-components/header/header.component';
 import MovieCard from './features/movie-search/movie-card/card.component';
 import SearchBox from './features/movie-search/search-box/search-box.component';
