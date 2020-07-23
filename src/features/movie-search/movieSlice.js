@@ -12,7 +12,7 @@ export const movieSlice = createSlice({
         state.searchString = action.payload;
     },
     receivedMovies: (state, action) => {
-        state.movies = action.payload;
+        state.movies = [action.payload];
     }
   },
 });

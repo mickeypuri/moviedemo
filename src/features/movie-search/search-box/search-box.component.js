@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-//import  SearchIcon  from './features/movie-search/search-icon/search-icon.component';
 import SearchIcon from '../search-icon/search-icon.component';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { selectMovieSearch, updateMovieSearch, updateMovies } from '../movieSlice';
 
 import styles from './search-box.module.css';
 
-const SearchBox = ({defaultText}) => (
-    <div className={styles.container}>
-        <input 
-            className={styles.input} 
-            placeholder={defaultText}
-        />
-        <SearchIcon />
-    </div>
-);
+const SearchBox = ({defaultText}) => {
+    const searchText = useSelector(selectMovieSearch);
+    const dispatch = useDispatch();
+
+    return (
+        <div className={styles.container}>
+            <input 
+                className={styles.input} 
+                placeholder={defaultText}
+                onChange={e => dispatch(updateMovieSearch(e.target.value))}
+                value={searchText}
+            />
+            <div onClick={() => dispatch(updateMovies(searchText))}>
+                <SearchIcon />
+            </div>
+           
+        </div>
+    );
+};
+
+
+
 
 SearchBox.propTypes = {
     defaultText: PropTypes.string

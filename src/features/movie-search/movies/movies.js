@@ -20,6 +20,8 @@ import styles from './movies.module.css';
 const Movies = () => {
   const movieList = useSelector(selectMovies);
   const movieSearchString = useSelector(selectMovieSearch);
+  console.log('Movies is rendering!');
+  //console.log(movieList);
 
   if (movieList.length > 0) {
     return ( 
