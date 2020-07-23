@@ -17,7 +17,13 @@ function App() {
   return (
     <>
       <Header />
-      <MovieCard {...tempProp} />
+      <div className="main-layout">
+        <MovieCard {...tempProp} />
+        <MovieCard {...tempProp} />
+        <MovieCard {...tempProp} />
+        <MovieCard {...tempProp} />
+      </div>
+
       <SearchIcon />
       <Counter />
     </>

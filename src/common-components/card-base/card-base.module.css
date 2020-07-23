@@ -1,8 +1,9 @@
 .container {
-    width: 40vw;
-    height: 300px;
-    margin-left: 2em;
-    margin-top: 1em;
+    min-width: 35vw;
+    max-width: 45vw;
+    height: 20vw;
+    min-height: 200px;
+    margin: 1em;
     padding: 0.5em;
     border-radius: 0.75em;
     background-color: white;
