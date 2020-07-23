@@ -1,0 +1,23 @@
+.imgContainer {
+    width: 36%;
+    height: 98%;
+    overflow: hidden;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info {
+    width: 60%;
+    
+}
+
+.subtitle {
+    color: gray;
+}
+
+.callout {
+ color: #834DB7;
+}
