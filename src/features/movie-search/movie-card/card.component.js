@@ -14,11 +14,9 @@ const MovieCard = ({heading, subTitle, callout, imgUrl}) => (
         <div className={styles.info}>
             <h1>{ heading }</h1>
             <div className={styles.subtitle}>{ subTitle }</div>
-            <div className={styles.callout}>
-                {Object.keys(callout).map(key => (
-                    <p key={key}>{callout[key]}</p>
-                ))}
-            </div>
+            <p className={styles.callout}>
+                { callout }
+            </p>
         </div>
     </CardBase>
 );
@@ -26,11 +24,7 @@ const MovieCard = ({heading, subTitle, callout, imgUrl}) => (
 MovieCard.propTypes = {
     heading: PropTypes.string.isRequired,
     subTitle: PropTypes.string.isRequired,
-    callout: PropTypes.shape({
-        plot: PropTypes.string,
-        awards: PropTypes.string,
-        actors: PropTypes.string
-    }),
+    callout: PropTypes.string.isRequired,
     imgUrl: PropTypes.string.isRequired
 }
 

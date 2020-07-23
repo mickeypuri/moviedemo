@@ -20,5 +20,9 @@
 
 .callout {
  color: #834DB7;
- overflow-y: scroll;
+ width:100%;
+ height: 100%;
+ font-size: inherit;
+ border: none;
+ margin-top: 0.5em;
 }
