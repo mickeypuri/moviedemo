@@ -5,14 +5,22 @@ export const movieSlice = createSlice({
   name: 'movie',
   initialState: {
     searchString: '',
-    movies: []
+    movies: [],
+    lastSearch: ''
   },
   reducers: {
     updateMovieSearch: (state, action) => {
         state.searchString = action.payload;
     },
     receivedMovies: (state, action) => {
-        state.movies = [action.payload];
+        state.lastSearch = state.searchString;
+        if (action.payload.hasOwnProperty('Error'))
+        {
+          state.movies = [];
+        } else {
+          state.movies = [action.payload];
+        }
+        
     }
   },
 });
@@ -30,5 +38,7 @@ export const updateMovies = searchString => dispatch => {
 export const selectMovieSearch = state => state.movie.searchString;
 
 export const selectMovies = state => state.movie.movies;
+
+export const selectLastSearch = state => state.movie.lastSearch;
 
 export default movieSlice.reducer;
